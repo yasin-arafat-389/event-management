@@ -5,7 +5,7 @@ const MainSlider = () => {
         <div className="absolute inset-0">
           <img
             className="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left"
-            src="https://i.ibb.co/S00MTBK/pngtree-event-management-doodle-set-picture-image-1952957.png"
+            src="https://i.ibb.co/74K5347/pngtree-event-management-doodle-set-image-1435576.jpg"
             alt=""
           />
         </div>
