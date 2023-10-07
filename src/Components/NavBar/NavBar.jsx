@@ -76,7 +76,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#f3f2f0] px-1 lg:px-7 md:px-7 flex-col md:flex-row lg:flex-row gap-5 md:gap-0 lg:gap-0">
+      <div className="navbar bg-[#f3f2f0] px-1 lg:px-7 md:px-7 gap-5 md:gap-0 lg:gap-0">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -123,7 +123,7 @@ const NavBar = () => {
                 <button
                   onClick={handleLogOut}
                   type="button"
-                  className="px-4 w-[100px] py-3 font-semibold rounded bg-[#ff572280] dark:text-gray-800"
+                  className=" px-4  py-3 font-semibold rounded bg-[#ff572280] dark:text-gray-800"
                 >
                   Log Out
                 </button>

@@ -1,8 +1,12 @@
-# React + Vite
+## About Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Project name:- Evento
+- [Project live URL](https://event-management-389.surge.sh/)
 
-Currently, two official plugins are available:
+# Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User can see the services we offer in the homepage.
+- User can see details about services by clicking see details button.
+- User can register and login to the website using password authentication.
+- User can also opt out for login with gmail.
+- A logged in user can see their profile photo and name in the navigation bar.
