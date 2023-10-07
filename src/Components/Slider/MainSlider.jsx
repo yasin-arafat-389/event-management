@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const MainSlider = () => {
   return (
     <div>
@@ -24,8 +26,8 @@ const MainSlider = () => {
               Creativity, and Dedication. Your Vision, Our Expertise, Every
               Celebration
             </p>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               title=""
               className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-6 hover:bg-yellow-400 focus:bg-yellow-400"
               role="button"
@@ -45,7 +47,7 @@ const MainSlider = () => {
                   d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../../Context/AuthContext";
 import toast from "react-hot-toast";
 
 const Login = () => {
   let { login, googleLogin } = useContext(authContext);
+  let navigate = useNavigate();
+  let location = useLocation();
 
   let handleLogin = (e) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ const Login = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
+        navigate(location?.state ? location.state : "/");
         toast.success("Successfully Logged In!!");
       })
       .catch((error) => {
@@ -28,6 +31,7 @@ const Login = () => {
   let handleGoogleLogin = () => {
     googleLogin()
       .then(() => {
+        navigate(location?.state ? location.state : "/");
         toast.success("Successfully Logged In!!");
       })
       .catch((error) => {
