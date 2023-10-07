@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, Link } from "react-router-dom";
 
 const Services = () => {
   let data = useLoaderData();
@@ -42,9 +42,11 @@ const Services = () => {
                 {item.price}
               </p>
               <div className="card-actions">
-                <button className="btn btn-primary bg-yellow-300 hover:bg-yellow-300 border-none text-[#000] rounded-xl">
-                  See Details
-                </button>
+                <Link to={`/event-details/${item.slug}`}>
+                  <button className="btn btn-primary bg-yellow-300 hover:bg-yellow-300 border-none text-[#000] rounded-xl">
+                    See Details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

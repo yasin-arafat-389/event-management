@@ -32,9 +32,26 @@ const NavBar = () => {
           className={({ isActive, isPending }) => {
             return isActive ? "active" : isPending ? "pending" : "";
           }}
-          to="/button"
+          to="/pricing"
         >
-          <span className="text-[17px]">Login</span>
+          <span className="text-[17px]">Pricing</span>
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          style={({ isActive }) => {
+            return {
+              backgroundColor: isActive ? "#ff572280" : "inherit",
+              color: isActive ? "#000" : "inherit",
+              borderRadius: "10px",
+            };
+          }}
+          className={({ isActive, isPending }) => {
+            return isActive ? "active" : isPending ? "pending" : "";
+          }}
+          to="/contact"
+        >
+          <span className="text-[17px]">Contact</span>
         </NavLink>
       </li>
     </>
