@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 const EventDetails = () => {
   let data = useLoaderData();
@@ -26,8 +26,8 @@ const EventDetails = () => {
               <div className="badge badge-secondary text-[#fff]">Price:</div>{" "}
               {item.price}
             </p>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               title=""
               className=" items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-6 hover:bg-yellow-400 focus:bg-yellow-400 flex justify-center"
               role="button"
@@ -47,7 +47,7 @@ const EventDetails = () => {
                   d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-            </a>
+            </Link>
           </section>
         ))}
       </div>

@@ -1,265 +1,292 @@
 const Pricing = () => {
   return (
     <div>
-      <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
-        <div className="container mx-auto p-4 sm:p-10">
-          <div className="mb-16 space-y-4 text-center">
-            <h1 className="text-4xl font-semibold leadi">Pricing</h1>
-            <p className="px-4 sm:px-8 lg:px-24">
-              Take a look at our 3 best pricing packages and choose the one that
-              fits you best.
+      <div className="max-w-2xl mx-auto text-center mt-10">
+        <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+          Pricing & Plans
+        </h2>
+        <p className="max-w-lg text-[20px] font-medium mx-auto mt-4 text-base leading-relaxed text-gray-600">
+          Choose from our best 3 pricing packages and select <br /> the one fits
+          you best
+        </p>
+      </div>
+      <div className="grid lg:grid-cols-3 md:grid-cols-1 justify-items-center px-8 gap-10 md:gap-10 lg:gap-0 text-zinc-800 mt-14 mb-20">
+        <div className="flex flex-col items-center bg-slate-100 p-8 rounded-lg shadow-lg max-w-sm">
+          <div>
+            <h2 className="font-extrabold text-3xl text-center mb-2">Basic</h2>
+            <p className="opacity-60 text-center">
+              For the individual and small teams
             </p>
+            <div className="flex flex-col items-center my-8">
+              <p className="font-extrabold text-4xl">$200</p>
+              <p className="text-sm opacity-60">/event</p>
+            </div>
           </div>
-          <div className="grid max-w-md grid-cols-1 gap-6 mx-auto auto-rows-fr lg:max-w-full lg:gap-2 xl:gap-6 lg:grid-cols-3">
-            <div className="relative z-0 flex flex-col items-center p-8 border rounded-md">
-              <span className="absolute top-0 px-6 pt-1 pb-2 font-medium rounded-b-lg dark:bg-green-400 dark:text-gray-900">
-                Personal
-              </span>
-              <p className="flex items-center justify-center my-6 space-x-2 font-bold">
-                <span className="pb-2 text-4xl">200$</span>
-                <span className="text-lg">/event</span>
-              </p>
-              <ul className="flex-1 space-y-2">
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Event Planning and Coordination</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Venue Selection</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Basic Decor and Design</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Guest List Management</span>
-                </li>
-              </ul>
-              <button className="px-4 py-2 mt-4 font-semibold uppercase border rounded-lg md:mt-12 sm:py-3 sm:px-8 dark:border-green-400">
-                Subscribe
-              </button>
-            </div>
-            <div className="relative flex flex-col items-center p-8 border-2 rounded-md dark:border-green-400 dark:bg-gray-800">
-              <span className="absolute top-0 px-6 pt-1 pb-2 font-medium rounded-b-lg dark:bg-green-400 dark:text-gray-900">
-                Professional
-              </span>
-              <p className="flex items-center justify-center my-6 space-x-2 font-bold">
-                <span className="pb-2 text-4xl">800$</span>
-                <span className="text-lg">/event</span>
-              </p>
-              <ul className="flex-1 space-y-2">
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Full-Service Event Management</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Exclusive Venue Selection</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Luxury Decor and Design</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>VIP Guest List Services</span>
-                </li>
-              </ul>
-              <button className="px-8 py-3 mt-12 text-lg font-semibold uppercase rounded dark:bg-green-400 dark:text-gray-900">
-                Subscribe
-              </button>
-            </div>
-            <div className="relative z-0 flex flex-col items-center p-8 border rounded-md dark:bg-gray-800">
-              <span className="absolute top-0 px-6 pt-1 pb-2 font-medium rounded-b-lg dark:bg-green-400 dark:text-gray-900">
-                Enterprise
-              </span>
-              <p className="flex items-center justify-center my-6 space-x-2 font-bold">
-                <span className="pb-2 text-4xl">500$</span>
-                <span className="text-lg">/event</span>
-              </p>
-              <ul className="flex-1 space-y-2">
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Comprehensive Event Planning</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Premium Venue Selection</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Creative Decor and Design</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="w-6 h-6 dark:text-green-400"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                    ></path>
-                  </svg>
-                  <span>Advanced Guest List Management</span>
-                </li>
-              </ul>
-              <button className="px-8 py-3 mt-12 text-lg font-semibold uppercase border rounded dark:border-green-400">
-                Subscribe
+          <div className="flex flex-col gap-1">
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Event Planning and Coordination</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Venue Selection</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Basic Decor and Design</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Guest List Management</b>
+            </p>
+
+            <div className="flex justify-center mt-8 ">
+              <button className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+                Get Started
               </button>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="flex flex-col items-center bg-gradient-to-br from-blue-100 via-orange-100 to-purple-100 p-8 rounded-lg shadow-lg relative border-8 border-orange-200 max-w-sm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+            className="w-20 h-20 absolute -top-11 -left-11 fill-red-400"
+          >
+            <path
+              fillRule="evenodd"
+              d="M12.963 2.286a.75.75 0 00-1.071-.136 9.742 9.742 0 00-3.539 6.177A7.547 7.547 0 016.648 6.61a.75.75 0 00-1.152-.082A9 9 0 1015.68 4.534a7.46 7.46 0 01-2.717-2.248zM15.75 14.25a3.75 3.75 0 11-7.313-1.172c.628.465 1.35.81 2.133 1a5.99 5.99 0 011.925-3.545 3.75 3.75 0 013.255 3.717z"
+              clipRule="evenodd"
+            ></path>
+          </svg>
+          <p className="mono text-sm absolute -top-4 bg-red-400 text-zinc-100 py-0.5 px-2 font-bold tracking-wider rounded">
+            POPULAR
+          </p>
+          <div>
+            <div className="flex gap-4 justify-center">
+              <p className="font-extrabold text-3xl mb-2">Professional</p>
+            </div>
+            <p className="opacity-60 text-center">
+              For agencies and businesses
+            </p>
+            <p className="opacity-60 text-center"></p>
+            <div className="flex gap-4 justify-center">
+              <div className="flex flex-col items-center my-8">
+                <p className="font-extrabold text-4xl">$800</p>
+                <p className="text-sm opacity-60">/event</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-1">
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Full-Service Event Management</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Exclusive Venue Selection</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Luxury Decor and Design</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>VIP Guest List Services</b>
+            </p>
+            <div className="flex justify-center mt-8">
+              <button className="px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center bg-slate-100 p-8 rounded-lg shadow-lg max-w-sm">
+          <div>
+            <h2 className="font-extrabold text-3xl text-center mb-2">
+              Enterprise
+            </h2>
+            <p className="opacity-60 text-center">
+              For enterprise level events
+            </p>
+            <div className="flex flex-col items-center my-8">
+              <p className="font-extrabold text-4xl">$1200</p>
+              <p className="text-sm opacity-60">/event</p>
+            </div>
+          </div>
+          <div className="flex flex-col gap-1">
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Comprehensive Event Planning</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Premium Venue Selection</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Creative Decor and Design</b>
+            </p>
+            <p className="flex items-center text-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+                className="w-4 h-4 mr-2"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+              <b>Advanced Guest List Management</b>
+            </p>
+            <div className="flex justify-center mt-8 ">
+              <button className=" px-4 py-2 border-violet-400 border-4 hover:bg-violet-100 rounded-xl">
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
