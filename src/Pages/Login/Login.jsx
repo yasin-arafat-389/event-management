@@ -15,9 +15,7 @@ const Login = () => {
     let password = e.target.password.value;
 
     login(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
+      .then(() => {
         navigate(location?.state ? location.state : "/");
         toast.success("Successfully Logged In!!");
       })

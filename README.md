@@ -1,6 +1,6 @@
 ## About Project
 
-- Project name:- Evento
+- Project name:- Eventistry
 - [Project live URL](https://event-management-389.surge.sh/)
 
 # Features

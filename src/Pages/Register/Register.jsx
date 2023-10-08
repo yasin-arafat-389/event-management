@@ -28,10 +28,7 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        console.log(user);
-
+      .then(() => {
         update(name, photo)
           .then(() => {})
           .catch((error) => {
