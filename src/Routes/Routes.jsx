@@ -22,20 +22,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/event-details/:slug",
-        element: (
-          <PrivateRoute>
-            <EventDetails />
-          </PrivateRoute>
-        ),
+        element: <EventDetails />,
         loader: () => fetch("../Data.json"),
       },
       {
         path: "/pricing",
-        element: (
-          <PrivateRoute>
-            <Pricing />
-          </PrivateRoute>
-        ),
+        element: <Pricing />,
       },
       {
         path: "/contact",
