@@ -1,15 +1,17 @@
 /* eslint-disable react/no-unknown-property */
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { authContext } from "../../Context/AuthContext";
 import toast from "react-hot-toast";
 
 const Login = () => {
+  let [loading, setLoading] = useState(false);
   let { login, googleLogin } = useContext(authContext);
   let navigate = useNavigate();
   let location = useLocation();
 
   let handleLogin = (e) => {
+    setLoading(true);
     e.preventDefault();
     let email = e.target.email.value;
     let password = e.target.password.value;
@@ -22,6 +24,7 @@ const Login = () => {
       .catch((error) => {
         if (error) {
           toast.error("Invalid Email or Password!!");
+          setLoading(false);
         }
       });
   };
@@ -241,7 +244,11 @@ const Login = () => {
                       type="submit"
                       className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 border border-transparent rounded-md bg-gradient-to-r from-fuchsia-600 to-blue-600 focus:outline-none hover:opacity-80 focus:opacity-80"
                     >
-                      Log in
+                      {loading ? (
+                        <span className="loading loading-bars loading-md"></span>
+                      ) : (
+                        " Login"
+                      )}
                     </button>
                   </div>
                 </div>

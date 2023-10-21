@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { authContext } from "../../Context/AuthContext";
 import swal from "sweetalert";
@@ -7,8 +7,10 @@ import toast from "react-hot-toast";
 const Register = () => {
   let { createUser, logOut, update } = useContext(authContext);
   let navigate = useNavigate();
+  const [loader, setLoader] = useState(false);
 
   let handleRegister = (e) => {
+    setLoader(true);
     e.preventDefault();
     let name = e.target.name.value;
     let photo = e.target.image.value;
@@ -24,6 +26,7 @@ const Register = () => {
         "Password must be at least 6 characters long, containing at least one upper case and special character",
         "error"
       );
+      setLoader(false);
       return;
     }
 
@@ -46,6 +49,8 @@ const Register = () => {
       })
       .catch((error) => {
         console.log(error);
+        setLoader(false);
+        toast.error("Something went wrong!!");
       });
 
     e.target.name.value = "";
@@ -164,7 +169,11 @@ const Register = () => {
                       type="submit"
                       className="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 bg-blue-600 border border-transparent rounded-md focus:outline-none hover:bg-blue-700 focus:bg-blue-700"
                     >
-                      Sign up
+                      {loader ? (
+                        <span className="loading loading-bars loading-md"></span>
+                      ) : (
+                        " Sign up"
+                      )}
                     </button>
                   </div>
                 </div>
