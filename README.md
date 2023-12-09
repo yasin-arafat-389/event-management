@@ -3,6 +3,10 @@
 - Project name:- Eventistry
 - [Project live URL](https://event-management-389.surge.sh/)
 
+## Technologies used
+
+- React (state management, react router)
+
 # Features
 
 - User can see the services we offer in the homepage.
